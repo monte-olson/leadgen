@@ -1,0 +1,40 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title KBS iQuote
+    link(rel='stylesheet', href='./css/app.css')
+    link(media='screen' href='http://openfontlibrary.org/face/news-cycle' rel='stylesheet' type='text/css')
+    link(rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
+  body
+    nav.nav(class='navbar navbar-default navbar-fixed-top' role='navigation')
+      div(class='container')
+
+        h1.heading Kirby iQuote
+          a(href='#')
+           img#facebook(src='/media/facebook.png' alt='Link to Kirby\'s Facebook page')
+          a(href='#')
+           img#twitter(src='/media/twitter.png' alt='Link to Kirby\'s Twitter handle')
+          a(href='#')
+           img#googleplus(src='/media/googleplus.png' alt='Link to Kirby\'s Google Plus account')
+
+    h1.content1 This is some text that will be explaining this awesome picture of a car dealership kirby built. blah blah blah blahh
+    div(class='parallax-window' data-parallax='scroll' data-speed='.3' data-image-src='/media/buildings/HardyFamilyFord.jpg')
+    div#content2
+        h2.content2 Change the default building settings and click Quote to get an average price for buildings that match your parameters. If you are interested in pursuing a designed quote, contact your local DSM (District Sales Manager) or nearest Kirby Builder. 
+ 
+    #iquote1
+
+    script(src='./js/vendor/jquery-2.1.0.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script(src='./js/source/parallax.js')
+    script(src='./js/source/parallax.min.js')
+    script(src='http://codepen.io/assets/libs/fullpage/jquery.js')
+    script(src='./js/vendor/json-to-tableNew.js')
+    script(src="http://fb.me/react-0.10.0.js")
+    script(src="http://fb.me/JSXTransformer-0.10.0.js")
+    script(type='text/jsx', src='./js/components/iquote.js')
+    script(type='text/jsx', src='./js/components/buildings.js')
+    script(type='text/jsx', src='./js/components/title.js')
+    script(type='text/jsx', src='./js/components/master.js')
+    script(src='./js/source/main.js')

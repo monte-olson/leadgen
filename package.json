@@ -1,0 +1,20 @@
+{
+  "name": "quote",
+  "version": "0.0.1",
+  "private": true,
+  "scripts":{
+    "start": "node app.js"
+  },
+  "dependencies":{
+    "express": "3.2.x",
+    "mongodb":	"0.9.x",
+    "grunt"               : "*",
+    "grunt-contrib-jshint": "*",
+    "jshint-stylish"      : "*",
+    "grunt-contrib-watch" : "*",
+    "grunt-contrib-copy"  : "*",
+    "grunt-contrib-jade"  : "*",
+    "grunt-contrib-less"  : "*",
+    "grunt-contrib-clean" : "*"
+  }
+}
