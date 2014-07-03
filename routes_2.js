@@ -1,9 +1,8 @@
 // setup routes
 //
-
 var	
 	//databaseUrl = "mydb", // "username:password@example.com/mydb"
-  databaseUrl = "mongodb://mofish58:mogwai58@ds027729.mongolab.com:27729/heroku_app27024277",
+  databaseUrl = "mongodb://mofish58:mogwai58@ds029960.mongolab.com:29960/mofish",
 	collections = [ "eQuotes", "ZipCodeCity", "Districts", "Accounts", "MbmaFips" ],
 	db = require("mongodb").connect(databaseUrl, collections);
 
@@ -55,8 +54,7 @@ var configRoutes = function( app, server ) {
 	});
 
 	app.get( '/:obj_type/estm/:width/:bays', function ( req, res ) {
-              Bays: parseInt(req.params.bays) },		
-    db.eQuotes.find({ Wid: { $gt: parseFloat(req.params.width) - 10.0, $lt: parseFloat(req.params.width) + 10.0 },
+		db.eQuotes.find({ Wid: { $gt: parseFloat(req.params.width) - 10.0, $lt: parseFloat(req.params.width) + 10.0 },
 		                  Bays: parseInt(req.params.bays) },
 			function(err, myQuotes ) {
   				if(err || !myQuotes) console.log("No quotes found: " + err);
