@@ -4,7 +4,7 @@ var
 	//databaseUrl = "mydb", // "username:password@example.com/mydb"
   databaseUrl = "mongodb://mofish58:mogwai58@ds029960.mongolab.com:29960/mofish",
 	collections = [ "eQuotes", "ZipCodeCity", "Districts", "Accounts", "MbmaFips" ],
-	db = require("mongojs").connect(databaseUrl, collections);
+	db = require("mongodb").connect(databaseUrl, collections);
 
 function sortByProperty(property) {
     'use strict';
